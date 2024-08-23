@@ -1,6 +1,6 @@
 var1= input("?")
-var2= 7
-var3= 3
+var2= 27
+var3= 41
 
 
 
