@@ -1,16 +1,18 @@
 #variaveis de preço
-p1=100
-p2=200
-p3=300
-
-t=p1+p2+p3
-
+preços=[100,200,300]
 desc=0
-if t>500:
-    desc=t*0.1
 
-r=t-desc
+#soma dos preços
+total=sum(preços)
 
-print("total antes do desconto", t)
-print("desconto aplicado", desc)
-print("total com desconto", r)
+#formula do desconto
+if total>500:
+    desc=total*0.1
+
+#calculo dos descontos
+valor_final=total-desc
+
+#respostas do codigo
+print("Total antes do desconto:", total,"Reais")
+print("Desconto aplicado é de:", desc,"Reais")
+print("Total com desconto é de:", valor_final,"Reais")
