@@ -3,16 +3,19 @@ idade=int(input("qual a sua idade? "))
 
 #definir a categoria dependendo da idade
 def validarIdadeTotal(idade):
+    mensagemFormal= "A pessoa é classificada como "
+    MensagemInformal= "ele é um "
     if idade < 13:
-        return"Criança"
+        return mensagemFormal+"Criança"
     elif idade >= 13 and idade < 18:
-        return"Adolescente"
+        return mensagemFormal+"Adolescente"
     elif idade >=18 and idade <70:
-        return"Adulto"  
+        return mensagemFormal+"Adulto"  
     elif idade >=70 and idade <100:
-        return"Idoso"  
+        return mensagemFormal+"Idoso"  
     else:
-        return "Fossil"
+        return MensagemInformal+"Fossil"
 
+#chamar a funçao novamente
 categoriaIdade = validarIdadeTotal(idade)
-print(f"A pessoa é classificada como: {categoriaIdade}")    
+print(categoriaIdade)
