@@ -14,8 +14,7 @@ if var2 == 2:
 
 def validarchamda2(var2):
     if var2 :1 or 0
-    print("oque vai fazer agora?:",var3)
-    input(":")
+    print(input(f"oque vai fazer agora?:{var3}"))
     print("tenha um otimo dia!!")
 categoriaIdade = validarchamda2(var2)
 print(categoriaIdade)
