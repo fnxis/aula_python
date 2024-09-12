@@ -1,1 +1,1 @@
-print("Desconto aplicado é de:", desc,"Reais")
+listaPessoas=[]
