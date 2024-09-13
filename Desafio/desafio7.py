@@ -1,13 +1,20 @@
 alunos={"ryan":2,"galvao":8,"rafael":7,"guilherme":10}
-verificaraluno=input("qual aluno voçe quer? ")
-if verificaraluno in alunos:
-    if verificaraluno =="rafael":
-        print(f"a sua nota é {alunos['rafael']}")
-    if verificaraluno =="ryan":
-        print(f"a sua nota é {alunos['ryan']}")
-    if verificaraluno =="guilherme":
-        print(f"a sua nota é {alunos['guilherme']}")
-    if verificaraluno =="galvao":
-        print(f"a sua nota é {alunos['galvao']}")        
-else:
-    print("este aluno nao esta com nota")
+
+def recuperarNota(aluno):
+    if aluno in alunos:
+        print(f"a nota de {aluno} é {alunos[aluno]}") 
+    else:
+        print("este aluno nao esta com nota")
+        main()
+
+        operacao=input("deseja tentat novamente?(s/n)")
+        if operacao.upper() == "s":
+            main()
+        elif operacao.upper() == "n":
+            print("programa finalizado")
+        else:
+            print("digite corretamente")
+def main():
+    aluno=input("digite seu nome")
+    recuperarNota(aluno)
+main()
