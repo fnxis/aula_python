@@ -7,7 +7,7 @@ def recuperarNota(aluno):
         print("este aluno nao esta com nota")
         main()
 
-        operacao=input("deseja tentat novamente?(s/n)")
+        operacao=input("deseja tentar novamente?(s/n)")
         if operacao.upper() == "s":
             main()
         elif operacao.upper() == "n":
